@@ -1,5 +1,5 @@
-name = ELAT (CDN)
-description = ELAT subtheme. Uses the jsDelivr CDN for all CSS and JavaScript.
+name = ELAT (LESS)
+description = ELAT subtheme. 
 core = 7.x
 base theme = bootstrap
 
