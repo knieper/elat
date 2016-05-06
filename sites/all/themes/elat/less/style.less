@@ -3,3 +3,174 @@
 
 // Base-theme overrides.
 @import 'overrides';
+
+body{
+    background-image: url('../img/Visit-to-StJoesHospital-farm.jpg');
+  	background-size: cover;
+  	background-attachment: fixed;
+  	/*height: 100vh;*/
+    &.page-goals{
+      background-image: url('../img/GVSU-Dance.jpg');
+    }
+    &.node-type-case-study,
+    &.node-type-example,
+    &.page-examples-of-engaged-learning{
+      background-image: url('../img/The-Quito-Project.jpg');
+    }
+    &.page-instruments,
+    &.node-type-instrument,
+    &.page-node-9{
+      background-image: url('../img/Ancient.World.jpg');
+    }
+}
+
+.sheer{
+  background: rgba(51,51,51,.5);
+  /*height: 100%;*/
+}
+
+#header-wrapper{
+	background-color: rgba(0, 39, 76, 0.85);
+	margin-bottom: 60px;
+  color: white;
+}
+
+.main-menu{
+  font-family: 'robotolight';
+  font-size: @font-size-h4;
+  text-transform: uppercase;
+  padding-bottom: 35px;
+  li{
+    .dropdown-menu{
+	     box-shadow: none;
+       border: none;
+       width: 500px;
+       li{
+         position: relative;
+         display: inline-block;
+       }
+     }
+     &.open a{
+       padding-bottom:5px;
+     }
+     &.last > .dropdown-menu {
+        right: 0;
+	      left: initial;
+	      text-align: right;
+     }
+  }
+}
+.dropdown-menu > li > a,
+.dropdown-menu > .active > a {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+a {
+  &.name {
+    font-family: 'robotolight';
+    font-size: @font-size-h1;
+    text-transform: uppercase;
+	  letter-spacing: 1px;
+    color: white;
+    &:hover,
+    &:focus,
+    &:active{
+      border-bottom: 1px solid white;
+	    text-decoration: none;
+    }
+    &:visited{
+      color: white;
+    }
+  }
+}
+
+.region-util-navigation .nav {
+  text-align: right;
+  font-size: @font-size-h6;
+  li{
+    display: inline-block;
+    text-align: right;
+  }
+  a{
+    color: white;
+    &:hover,
+    &:focus,
+    &:active{
+        color: #FFCB05; /*official yellow*/
+        text-decoration: underline;
+    }
+    &:visited{
+      color: white;
+    }
+  }
+}
+
+#footer-wrapper{
+	background-color: #333;
+}
+
+.footer{
+  border: none;
+  color: white;
+  img{
+	  width: 100px;
+	  float: right;
+	  padding-left: 10px;
+  }
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+//== Drupal views
+
+.page-header{
+  margin-bottom: 0px;
+  padding: 30px;
+}
+.page-header,
+.view-header,
+.view-filters,
+.view-content{
+  background-color: rgba(255,255,255, .85);
+  padding: 15px;
+}
+.view-header{
+  padding: 0px 30px 30px 30px;
+  margin-bottom: 60px;
+}
+.view-filters{
+  margin-bottom: 0px;
+  padding-bottom: .5em;
+}
+.view-content{
+
+}
+
+//== button
+.btn{
+  text-transform: uppercase;
+}
+
+//== Mixins
+.button-variant(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:focus,
+  &.focus {
+    color: @color;
+    background-color: lighten(@background, 10%);
+        border-color: lighten(@border, 25%);
+  }
+  &:hover {
+    color: @color;
+    background-color: lighten(@background, 10%);
+        border-color: lighten(@border, 12%);
+  }
+}
