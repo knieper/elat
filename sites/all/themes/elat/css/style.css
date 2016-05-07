@@ -1098,7 +1098,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "robotothin", Arial, sans-serif;
+  font-family: "robotolight", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -6078,7 +6078,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "robotothin", Arial, sans-serif;
+  font-family: "robotolight", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6196,7 +6196,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "robotothin", Arial, sans-serif;
+  font-family: "robotolight", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7638,7 +7638,7 @@ body.page-node-9 {
   color: white;
 }
 .main-menu {
-  font-family: 'robotolight';
+  font-family: 'robotothin';
   font-size: 18px;
   text-transform: uppercase;
   padding-bottom: 35px;
@@ -7667,7 +7667,7 @@ body.page-node-9 {
   text-decoration: underline;
 }
 a.name {
-  font-family: 'robotolight';
+  font-family: 'robotothin';
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 1px;
