@@ -154,7 +154,7 @@
       		if(!empty($title) && !($is_front) && $case_study == FALSE): ?>
         <h1 class="page-header"><?php print $title; ?></h1>
       <?php endif; ?>
-      <?php dpm($case_study); ?>
+     
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
