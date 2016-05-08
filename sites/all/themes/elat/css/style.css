@@ -24,6 +24,7 @@
   src: url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.woff") format("woff"), url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.ttf") format("truetype"), url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.svg#robotoitalic") format("svg");
 }
 /*official yellow*/
+/*#587ABC;*/
 /*official yellow*/
 /*official yellow*/
 /*official yellow*/
@@ -1203,7 +1204,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: #587ABC;
+  color: #333;
 }
 h1 small,
 h2 small,
@@ -7744,3 +7745,37 @@ h4 {
 .btn {
   text-transform: uppercase;
 }
+.attention {
+  color: white;
+  padding: 20px 0px 80px 0px;
+  font-size: 20px;
+}
+.beginning,
+.middle,
+.end {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+}
+.beginning .field-label,
+.middle .field-label,
+.end .field-label {
+  padding: .5em 0px;
+}
+.beginning .field-items,
+.middle .field-items,
+.end .field-items {
+  padding-bottom: 1em;
+}
+.beginning {
+  padding: 30px 45px;
+}
+.field-name-title {
+  text-transform: uppercase;
+}
+.field-name-field-faculty-title {
+  font-size: smaller;
+}
+/*.media-youtube-player{
+  width: 100%;
+  height: auto;
+}*/
