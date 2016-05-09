@@ -45,7 +45,7 @@
  * @ingroup templates
  */ 
 ?>
-<section id="<?php print $block_html_id; ?>" class="<?php print $classes; if($block->region == 'footer'): ?> col-xs-4 <?php endif;?> clearfix"<?php print $attributes; ?>>
+<section id="<?php print $block_html_id; ?>" class="<?php print $classes; if($block->region == 'footer'): ?> col-sm-4 <?php endif;?> clearfix"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>

@@ -130,18 +130,18 @@ h1, h2, h3, h4 {
 
 .page-header{
   margin-bottom: 0px;
-  padding: 30px;
+  padding: 45px;
 }
 .page-header,
 .view-header,
 .view-filters,
 .view-content{
   background-color: rgba(255,255,255, .85);
-  padding: 30px;
+  padding: 45px;
   border-bottom: none;
 }
 .view-header{
-  padding: 0px 30px 30px 30px;
+  padding: 0px 45px 45px 45px;
   margin-bottom: 60px;
 }
 .view-filters{
@@ -208,3 +208,40 @@ h1, h2, h3, h4 {
   width: 100%;
   height: auto;
 }*/
+
+//==homepage specifics
+#home-row{
+
+  .left, .center, .right{
+
+    padding-bottom: 1em;
+    div{
+      background: rgba(255,255,255,.1);
+      border: 2px solid white;
+      text-align: center;
+      height: 100%;
+      &:hover,
+      &:focus,
+      &:active{
+        background: rgba(255,255,255, .5);
+      }
+    }
+    a{
+      color: white;
+      text-transform: uppercase;
+      font-size:@font-size-h3;
+      margin: 20% 0;
+      display:block;
+      min-height: 1em;
+      @media (min-width: @screen-sm-min){
+        min-height: 4.285em;
+      }
+      &:hover,
+      &:focus,
+      &:active{
+        text-decoration:none;
+      }
+    }
+  }
+
+}

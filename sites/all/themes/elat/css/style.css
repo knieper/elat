@@ -7724,18 +7724,18 @@ h4 {
 }
 .page-header {
   margin-bottom: 0px;
-  padding: 30px;
+  padding: 45px;
 }
 .page-header,
 .view-header,
 .view-filters,
 .view-content {
   background-color: rgba(255, 255, 255, 0.85);
-  padding: 30px;
+  padding: 45px;
   border-bottom: none;
 }
 .view-header {
-  padding: 0px 30px 30px 30px;
+  padding: 0px 45px 45px 45px;
   margin-bottom: 60px;
 }
 .view-filters {
@@ -7779,3 +7779,55 @@ h4 {
   width: 100%;
   height: auto;
 }*/
+#home-row .left,
+#home-row .center,
+#home-row .right {
+  padding-bottom: 1em;
+}
+#home-row .left div,
+#home-row .center div,
+#home-row .right div {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  text-align: center;
+  height: 100%;
+}
+#home-row .left div:hover,
+#home-row .center div:hover,
+#home-row .right div:hover,
+#home-row .left div:focus,
+#home-row .center div:focus,
+#home-row .right div:focus,
+#home-row .left div:active,
+#home-row .center div:active,
+#home-row .right div:active {
+  background: rgba(255, 255, 255, 0.5);
+}
+#home-row .left a,
+#home-row .center a,
+#home-row .right a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin: 20% 0;
+  display: block;
+  min-height: 1em;
+}
+@media (min-width: 768px) {
+  #home-row .left a,
+  #home-row .center a,
+  #home-row .right a {
+    min-height: 4.285em;
+  }
+}
+#home-row .left a:hover,
+#home-row .center a:hover,
+#home-row .right a:hover,
+#home-row .left a:focus,
+#home-row .center a:focus,
+#home-row .right a:focus,
+#home-row .left a:active,
+#home-row .center a:active,
+#home-row .right a:active {
+  text-decoration: none;
+}
