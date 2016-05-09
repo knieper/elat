@@ -7626,6 +7626,7 @@ body.node-type-example,
 body.page-examples-of-engaged-learning {
   background-image: url('../img/The-Quito-Project.jpg');
   background-image: url('../img/Light-bulb-on-blue-horizon.jpg');
+  background-image: url('../img/Light-bulb-on-blue-flipped-right.jpg');
 }
 body.page-instruments,
 body.node-type-instrument,
@@ -7838,6 +7839,12 @@ h4 {
 .middle > div,
 .end > div {
   padding: 30px;
+}
+@media screen and (min-width: 768px) {
+  .middle > div.right,
+  .end > div.right {
+    padding-top: 0px;
+  }
 }
 .middle .field-label,
 .end .field-label {

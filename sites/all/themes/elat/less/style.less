@@ -19,6 +19,7 @@ body{
     &.page-examples-of-engaged-learning{
       background-image: url('../img/The-Quito-Project.jpg');
       background-image: url('../img/Light-bulb-on-blue-horizon.jpg');
+      background-image: url('../img/Light-bulb-on-blue-flipped-right.jpg');
     }
     &.page-instruments,
     &.node-type-instrument,
@@ -265,7 +266,12 @@ h1, h2, h3, h4 {
   .left{
     background-color: rgba(255,255,255, .85);
   }
-  > div { padding: 30px;}
+  > div {
+    padding: 30px;
+    @media @tablet{
+        &.right {padding-top: 0px;}
+    }
+  }
   .field-label{
     padding: .5em 0px;
   }
