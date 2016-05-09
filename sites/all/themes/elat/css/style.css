@@ -7612,6 +7612,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 body {
   background-image: url('../img/Visit-to-StJoesHospital-farm.jpg');
+  background-image: url('../img/The-Quito-Project.jpg');
   background-size: cover;
   background-attachment: fixed;
   /*height: 100vh;*/
@@ -7623,6 +7624,7 @@ body.node-type-case-study,
 body.node-type-example,
 body.page-examples-of-engaged-learning {
   background-image: url('../img/The-Quito-Project.jpg');
+  background-image: url('../img/Visit-to-StJoesHospital-farm.jpg');
 }
 body.page-instruments,
 body.node-type-instrument,
@@ -7741,6 +7743,9 @@ h4 {
 .view-filters {
   margin-bottom: 0px;
   padding-bottom: .5em;
+}
+.node-type-page .region-content {
+  background: rgba(255, 255, 255, 0.85);
 }
 .btn {
   text-transform: uppercase;
