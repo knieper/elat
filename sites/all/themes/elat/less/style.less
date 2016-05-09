@@ -225,35 +225,53 @@ h1, h2, h3, h4 {
 //== Case study specifics
 .attention{
   color: white;
-  padding: 20px 0px 80px 0px;
-  font-size: @font-size-h4;
+  padding: 30px 0px 30px 0px;
+  margin-bottom: 120px;
+  .field-name-body{
+    width: 80%;
+    @media @tablet{ width: 60%;}
+    padding: 30px 0px;
+    margin:auto;
+    border-top: 2px solid white;
+    border-bottom:2px solid white;
+  }
+  p:first-child{
+    font-size: @font-size-h2;
+    font-family: 'Bad Script', cursive;
+    text-align: center;
+  }
 }
-.beginning, .middle, .end {
-  background-color: rgba(255,255,255, .85);
-  padding: 30px;
+
+.beginning{
+  color: white;
+  h1,h2,h3,h4{
+    color:white;
+  }
+  padding: 0px 0px 20px 0px;
+  .field-name-title{
+    text-transform:uppercase;
+    padding-bottom: .5em;
+  }
+  .field-name-field-faculty-title{
+    font-size: smaller;
+  }
+}
+.middle,
+.end {
+  .left{
+    background-color: rgba(255,255,255, .85);
+  }
+  > div { padding: 30px;}
   .field-label{
     padding: .5em 0px;
   }
-  .field-items{
+  .field-item{
     padding-bottom: 1em;
   }
 }
-.beginning{
-  padding: 30px 45px;
+.end{
+  //background-color: rgba(255,255,255, .85);
 }
-
-.field-name-title{
-  text-transform:uppercase;
-}
-.field-name-field-faculty-title{
-  font-size: smaller;
-}
-
-//was overflowing column
-/*.media-youtube-player{
-  width: 100%;
-  height: auto;
-}*/
 
 //==homepage specifics
 #home-row{
@@ -262,7 +280,7 @@ h1, h2, h3, h4 {
     font-family: 'robotothin';
     padding-bottom: 1em;
     div{
-      background: rgba(255,255,255,.1);
+      //background: rgba(255,255,255,.2);
       border: 2px solid white;
       text-align: center;
       height: 100%;
@@ -270,7 +288,7 @@ h1, h2, h3, h4 {
       &:focus,
       &:active{
         //background: rgba(255,255,255, .5);
-        background: rgba(255, 203, 5, .2);
+        background: rgba(255, 203, 5, .3);
       }
     }
     a{

@@ -79,8 +79,6 @@
  * @ingroup templates
  */
 ?>
-
-
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
@@ -97,7 +95,7 @@
     <?php endif; ?>
   </header>
   <?php endif; ?>
-  <div class="attention col-sm-12">
+  <div class="attention">
 	 <?php print render($content['body']); ?>
   </div>
   <?php
@@ -114,13 +112,13 @@
   	hide($content['field_images']);
   	hide($content['field_assessment_plan']);
   ?>
-  <div class="beginning col-sm-12">
+  <div class="beginning">
   	<h1> <?php print $title; ?> </h1>
   	<?php print render($content['field_faculty']); ?>
   </div>
-  <div class="middle col-sm-12">
+  <div class="middle">
   <?php if (!empty($content['field_project_goals']) || !empty($content['field_pedagogical_approach']) || !empty($content['field_assessment_plan'])): ?>
-  	<div class="left col-sm-6">
+  	<div class="left col-md-6">
   		<?php print render($content['field_project_goals']); ?>
   		<?php print render($content['field_pedagogical_approach']); ?>
   		<?php print render($content['field_assessment_plan']); ?>
@@ -128,13 +126,13 @@
   <?php endif; ?>
   
   <?php if (!empty($content['field_video']) || !empty($content['field_images'])): ?>
-  	<div class="right col-sm-6">
+  	<div class="right col-md-6">
   		<?php print render($content['field_video']); ?>
   		<?php print render($content['field_images']); ?>
   	</div>
   <?php endif; ?>
   </div> <!--end middle div-->
-  <div class="end col-sm-12">
+  <div class="end col-xs-12">
   	<?php if(!empty($content)): ?>
   	<?php print render($content); ?>
   </div>

@@ -4,6 +4,7 @@
  * Modify this file to override the Bootstrap Framework variables. You can copy
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
+@import url("https://fonts.googleapis.com/css?family=Bad+Script");
 @font-face {
   font-family: 'robotolight';
   src: url("../fonts/roboto_light_macroman/Roboto-Light-webfont.eot");
@@ -7793,38 +7794,59 @@ h4 {
 }
 .attention {
   color: white;
-  padding: 20px 0px 80px 0px;
-  font-size: 20px;
+  padding: 30px 0px 30px 0px;
+  margin-bottom: 120px;
 }
-.beginning,
-.middle,
-.end {
+.attention .field-name-body {
+  width: 80%;
+  padding: 30px 0px;
+  margin: auto;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+@media screen and (min-width: 768px) {
+  .attention .field-name-body {
+    width: 60%;
+  }
+}
+.attention p:first-child {
+  font-size: 34px;
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+}
+.beginning {
+  color: white;
+  padding: 0px 0px 20px 0px;
+}
+.beginning h1,
+.beginning h2,
+.beginning h3,
+.beginning h4 {
+  color: white;
+}
+.beginning .field-name-title {
+  text-transform: uppercase;
+  padding-bottom: .5em;
+}
+.beginning .field-name-field-faculty-title {
+  font-size: smaller;
+}
+.middle .left,
+.end .left {
   background-color: rgba(255, 255, 255, 0.85);
+}
+.middle > div,
+.end > div {
   padding: 30px;
 }
-.beginning .field-label,
 .middle .field-label,
 .end .field-label {
   padding: .5em 0px;
 }
-.beginning .field-items,
-.middle .field-items,
-.end .field-items {
+.middle .field-item,
+.end .field-item {
   padding-bottom: 1em;
 }
-.beginning {
-  padding: 30px 45px;
-}
-.field-name-title {
-  text-transform: uppercase;
-}
-.field-name-field-faculty-title {
-  font-size: smaller;
-}
-/*.media-youtube-player{
-  width: 100%;
-  height: auto;
-}*/
 #home-row .left,
 #home-row .center,
 #home-row .right {
@@ -7834,7 +7856,6 @@ h4 {
 #home-row .left div,
 #home-row .center div,
 #home-row .right div {
-  background: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
   text-align: center;
   height: 100%;
@@ -7848,7 +7869,7 @@ h4 {
 #home-row .left div:active,
 #home-row .center div:active,
 #home-row .right div:active {
-  background: rgba(255, 203, 5, 0.2);
+  background: rgba(255, 203, 5, 0.3);
 }
 #home-row .left a,
 #home-row .center a,
