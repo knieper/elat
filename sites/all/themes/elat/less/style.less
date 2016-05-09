@@ -95,11 +95,11 @@ body{
 a {
   &.name {
     text-transform: uppercase;
-	  letter-spacing: 1px;
+	//  letter-spacing: 1px;
     color: white;
     font-size: @font-size-h4;
     @media @tablet {
-      font-size: @font-size-h2;
+      font-size: @font-size-h1;
     }
     &:hover,
     &:focus,
@@ -184,6 +184,13 @@ h1, h2, h3, h4 {
 .view-content{
 
 }
+.views-row{
+  padding-bottom: 1em;
+}
+
+.views-field{
+  padding-bottom: 1em;
+}
 
 .node-type-page .region-content{
   /*background: rgba(255,255,255, .85);*/
@@ -250,7 +257,7 @@ h1, h2, h3, h4 {
 #home-row{
 
   .left, .center, .right{
-
+    font-family: 'robotothin';
     padding-bottom: 1em;
     div{
       background: rgba(255,255,255,.1);
@@ -260,7 +267,8 @@ h1, h2, h3, h4 {
       &:hover,
       &:focus,
       &:active{
-        background: rgba(255,255,255, .5);
+        //background: rgba(255,255,255, .5);
+        background: rgba(255, 203, 5, .2);
       }
     }
     a{
@@ -272,7 +280,7 @@ h1, h2, h3, h4 {
       min-height: 1em;
       @media @tablet{
         min-height: 4.285em;
-        margin: 20% 0;
+        margin: 20% 0px;
       }
       &:hover,
       &:focus,
@@ -280,6 +288,11 @@ h1, h2, h3, h4 {
         text-decoration:none;
       }
     }
+  }
+  .right {
+     @media @normal{
+       a{ margin: 25% 0px 15% 0px;}
+   }
   }
 
 }
