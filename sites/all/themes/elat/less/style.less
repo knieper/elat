@@ -9,7 +9,6 @@ body{
     background-image: url('../img/The-Quito-Project.jpg');
   	background-size: cover;
   	background-attachment: fixed;
-  	/*height: 100vh;*/
     &.page-goals{
       background-image: url('../img/GVSU-Dance.jpg');
     }
@@ -28,15 +27,15 @@ body{
 
 .sheer{
   background: rgba(51,51,51,.5);
-  /*height: 100%;*/
 }
 
 #header-wrapper{
-	background-color: rgba(0, 39, 76, 0.85);
+  font-family: 'robotothin';
+  background-color: rgba(0, 39, 76, 0.85);
 	margin-bottom: 60px;
   color: white;
   font-size: .85em;
-  @media (min-width: @screen-sm-min) {
+  @media @tablet {
     font-size: 1em;
   }
 }
@@ -47,10 +46,11 @@ body{
   text-transform: uppercase;
   padding-bottom: 35px;
   li{
-    .dropdown-menu{
+    ul.dropdown-menu{
 	     box-shadow: none;
        border: none;
        width: 500px;
+       text-align:left;
        li{
          position: relative;
          display: inline-block;
@@ -73,18 +73,34 @@ body{
     text-decoration: underline;
   }
 }
+//==alignment of nav when collapsed
+.navbar-default .navbar-collapse{
+  clear:both;
+  margin-top: 1em;
+  padding: 0px;
+  margin-left: -15px;
+  margin-right: -15px;
+  ul{
+    text-align:right;
+  }
+  &.in{
+    margin-left: 15px;
+    margin-right: 15px;
+    .dropdown li{
+        display: block;
+      }
+    }
+}
 
 a {
   &.name {
-    font-family: 'robotothin';
     text-transform: uppercase;
 	  letter-spacing: 1px;
     color: white;
-    font-size: @font-size-h3;
-    @media (min-width: @screen-sm-min) {
-      font-size: @font-size-h1;
+    font-size: @font-size-h4;
+    @media @tablet {
+      font-size: @font-size-h2;
     }
-
     &:hover,
     &:focus,
     &:active{
@@ -98,6 +114,9 @@ a {
 }
 
 .region-util-navigation .nav {
+  @media (max-width: @screen-sm-min){
+    display: none;
+  }
   text-align: right;
   font-size: @font-size-h6;
   li{
@@ -120,16 +139,20 @@ a {
 
 #footer-wrapper{
 	background-color: #333;
-}
 
-.footer{
-  border: none;
-  color: white;
-  img{
-	  width: 100px;
-	  float: right;
-	  padding-left: 10px;
-  }
+  .footer{
+    border: none;
+    color: white;
+    img{
+	     width: 100px;
+	      float: right;
+	       padding-left: 10px;
+       }
+   }
+   .block{
+     margin-bottom: 1em;
+   }
+
 }
 
 h1, h2, h3, h4 {
@@ -244,11 +267,12 @@ h1, h2, h3, h4 {
       color: white;
       text-transform: uppercase;
       font-size:@font-size-h3;
-      margin: 20% 0;
+      margin: 10% 0;
       display:block;
       min-height: 1em;
-      @media (min-width: @screen-sm-min){
+      @media @tablet{
         min-height: 4.285em;
+        margin: 20% 0;
       }
       &:hover,
       &:focus,
@@ -258,4 +282,20 @@ h1, h2, h3, h4 {
     }
   }
 
+}
+
+.navbar.container {
+  @media (min-width: @screen-sm-min) {
+    //width: @container-sm;
+    width: auto;
+    max-width:@screen-md-min;
+  }
+  @media (min-width: @screen-md-min) {
+    width: auto;
+    max-width: @container-lg;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: auto;
+    max-width: @screen-lg-min;
+  }
 }
