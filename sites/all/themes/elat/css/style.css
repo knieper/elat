@@ -7639,6 +7639,12 @@ body.page-node-9 {
   background-color: rgba(0, 39, 76, 0.85);
   margin-bottom: 60px;
   color: white;
+  font-size: .85em;
+}
+@media (min-width: 768px) {
+  #header-wrapper {
+    font-size: 1em;
+  }
 }
 .main-menu {
   font-family: 'robotothin';
@@ -7671,10 +7677,15 @@ body.page-node-9 {
 }
 a.name {
   font-family: 'robotothin';
-  font-size: 41px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: white;
+  font-size: 28px;
+}
+@media (min-width: 768px) {
+  a.name {
+    font-size: 41px;
+  }
 }
 a.name:hover,
 a.name:focus,
@@ -7745,7 +7756,7 @@ h4 {
   padding-bottom: .5em;
 }
 .node-type-page .region-content {
-  background: rgba(255, 255, 255, 0.85);
+  /*background: rgba(255,255,255, .85);*/
 }
 .btn {
   text-transform: uppercase;

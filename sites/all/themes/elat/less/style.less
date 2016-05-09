@@ -35,6 +35,10 @@ body{
 	background-color: rgba(0, 39, 76, 0.85);
 	margin-bottom: 60px;
   color: white;
+  font-size: .85em;
+  @media (min-width: @screen-sm-min) {
+    font-size: 1em;
+  }
 }
 
 .main-menu{
@@ -73,10 +77,14 @@ body{
 a {
   &.name {
     font-family: 'robotothin';
-    font-size: @font-size-h1;
     text-transform: uppercase;
 	  letter-spacing: 1px;
     color: white;
+    font-size: @font-size-h3;
+    @media (min-width: @screen-sm-min) {
+      font-size: @font-size-h1;
+    }
+
     &:hover,
     &:focus,
     &:active{
@@ -155,7 +163,7 @@ h1, h2, h3, h4 {
 }
 
 .node-type-page .region-content{
-  background: rgba(255,255,255, .85);
+  /*background: rgba(255,255,255, .85);*/
 
 }
 //== button
