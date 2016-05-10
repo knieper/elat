@@ -7849,6 +7849,7 @@ h4 {
 .middle .field-label,
 .end .field-label {
   padding: .5em 0px;
+  text-transform: uppercase;
 }
 .middle .field-item,
 .end .field-item {

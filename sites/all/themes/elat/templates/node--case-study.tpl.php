@@ -129,12 +129,13 @@
   	<div class="right col-md-6">
   		<?php print render($content['field_video']); ?>
   		<?php print render($content['field_images']); ?>
+  		<?php print render($content['field_findings']); ?>
   	</div>
   <?php endif; ?>
   </div> <!--end middle div-->
   <div class="end col-xs-12">
   	<?php if(!empty($content)): ?>
-  	<?php print render($content); ?>
+  	<?php print render($content); ?> <!--should be only lessons learned field -->
   </div>
    <?php endif; ?>
    
