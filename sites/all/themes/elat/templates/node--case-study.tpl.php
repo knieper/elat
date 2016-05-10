@@ -116,7 +116,7 @@
   	<h1> <?php print $title; ?> </h1>
   	<?php print render($content['field_faculty']); ?>
   </div>
-  <div class="middle">
+  <div class="middle col-xs-12">
   <?php if (!empty($content['field_project_goals']) || !empty($content['field_pedagogical_approach']) || !empty($content['field_assessment_plan'])): ?>
   	<div class="left col-md-6">
   		<?php print render($content['field_project_goals']); ?>

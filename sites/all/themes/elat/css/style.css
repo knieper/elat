@@ -7848,6 +7848,7 @@ h4 {
 .end {
   color: white;
   padding: 30px 0px 30px 0px;
+  margin: 2em 0px;
 }
 .end > div.field {
   width: 100%;
@@ -7868,7 +7869,6 @@ h4 {
 .end .field-item {
   font-size: 34px;
   font-family: 'Bad Script', cursive;
-  text-align: center;
 }
 #home-row .left,
 #home-row .center,
