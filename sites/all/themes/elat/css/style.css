@@ -7658,7 +7658,6 @@ body.page-node-9 {
   box-shadow: none;
   border: none;
   width: 500px;
-  text-align: left;
 }
 .main-menu li ul.dropdown-menu li {
   position: relative;
@@ -7667,10 +7666,9 @@ body.page-node-9 {
 .main-menu li.open a {
   padding-bottom: 5px;
 }
-.main-menu li.last > .dropdown-menu {
+.main-menu li > .dropdown-menu {
   right: 0;
   left: initial;
-  text-align: right;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > .active > a:hover,
