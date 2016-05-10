@@ -7798,7 +7798,7 @@ h4 {
   padding: 30px 0px 30px 0px;
   margin-bottom: 120px;
 }
-.attention .field-name-body {
+.attention > div.field {
   width: 80%;
   padding: 30px 0px;
   margin: auto;
@@ -7806,7 +7806,7 @@ h4 {
   border-bottom: 2px solid white;
 }
 @media screen and (min-width: 768px) {
-  .attention .field-name-body {
+  .attention > div.field {
     width: 60%;
   }
 }
@@ -7832,28 +7832,43 @@ h4 {
 .beginning .field-name-field-faculty-title {
   font-size: smaller;
 }
-.middle .left,
-.end .left {
+.middle {
   background-color: rgba(255, 255, 255, 0.85);
 }
-.middle > div,
-.end > div {
+.middle > div {
   padding: 30px;
 }
+.middle .field-label {
+  padding: .5em 0px;
+  text-transform: uppercase;
+}
+.middle .field-item {
+  padding-bottom: 1em;
+}
+.end {
+  color: white;
+  padding: 30px 0px 30px 0px;
+}
+.end > div.field {
+  width: 100%;
+  padding: 30px 0px;
+  margin: auto;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
 @media screen and (min-width: 768px) {
-  .middle > div.right,
-  .end > div.right {
-    padding-top: 0px;
+  .end > div.field {
+    width: 80%;
   }
 }
-.middle .field-label,
 .end .field-label {
   padding: .5em 0px;
   text-transform: uppercase;
 }
-.middle .field-item,
 .end .field-item {
-  padding-bottom: 1em;
+  font-size: 34px;
+  font-family: 'Bad Script', cursive;
+  text-align: center;
 }
 #home-row .left,
 #home-row .center,

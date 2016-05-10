@@ -232,7 +232,7 @@ h1, h2, h3, h4 {
   color: white;
   padding: 30px 0px 30px 0px;
   margin-bottom: 120px;
-  .field-name-body{
+  > div.field{
     width: 80%;
     @media @tablet{ width: 60%;}
     padding: 30px 0px;
@@ -261,16 +261,11 @@ h1, h2, h3, h4 {
     font-size: smaller;
   }
 }
-.middle,
-.end {
-  .left{
-    background-color: rgba(255,255,255, .85);
-  }
+.middle{
+  background-color: rgba(255,255,255, .85);
   > div {
     padding: 30px;
-    @media @tablet{
-        &.right {padding-top: 0px;}
-    }
+
   }
   .field-label{
     padding: .5em 0px;
@@ -281,7 +276,25 @@ h1, h2, h3, h4 {
   }
 }
 .end{
-  //background-color: rgba(255,255,255, .85);
+  color: white;
+  padding: 30px 0px 30px 0px;
+  > div.field{
+    width: 100%;
+    @media @tablet{ width: 80%;}
+    padding: 30px 0px;
+    margin:auto;
+    border-top: 2px solid white;
+    border-bottom:2px solid white;
+  }
+  .field-label{
+    padding: .5em 0px;
+    text-transform: uppercase;
+  }
+  .field-item{
+    font-size: @font-size-h2;
+    font-family: 'Bad Script', cursive;
+    text-align: center;
+  }
 }
 
 //==homepage specifics
