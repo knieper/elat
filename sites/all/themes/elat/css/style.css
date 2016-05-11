@@ -7622,10 +7622,8 @@ body.page-goals {
   background-image: url('../img/GVSU-Dance.jpg');
 }
 body.node-type-case-study,
-body.node-type-example,
-body.page-examples-of-engaged-learning {
-  background-image: url('../img/The-Quito-Project.jpg');
-  background-image: url('../img/Light-bulb-on-blue-horizon.jpg');
+body.node-type-faculty,
+body.page-tltc-funded-projects {
   background-image: url('../img/Light-bulb-on-blue-flipped-right.jpg');
 }
 body.page-instruments,
