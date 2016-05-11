@@ -198,10 +198,6 @@ h1, h2, h3, h4 {
   padding-bottom: 1em;
 }
 
-.node-type-page .region-content{
-  /*background: rgba(255,255,255, .85);*/
-
-}
 //== button
 .btn{
   text-transform: uppercase;
@@ -231,15 +227,23 @@ h1, h2, h3, h4 {
 }
 
 //==node defaults
-article.node-page{
+article.node-page,
+article.node-faculty,
+article.node-instrument{
   background-color: rgba(255,255,255, .85);
   padding: 45px;
+  .field-label{
+    padding: .5em 0px;
+    text-transform: uppercase;
+  }
+  .field-item{
+    padding-bottom: 1em;
+  }
+  //add spacing for numbered lists
+  ol > li {
+      padding-bottom: .5em;
+  }
 }
-//add spacing for numbered lists
-ol > li {
-    padding-bottom: .5em;
-}
-
 //== Case study specifics
 .attention{
   color: white;
@@ -310,8 +314,10 @@ ol > li {
 }
 
 //==homepage specifics
+.front article.node-page {
+  background: none;
+}
 #home-row{
-
   .left, .center, .right{
     font-family: 'robotothin';
     padding-bottom: 1em;

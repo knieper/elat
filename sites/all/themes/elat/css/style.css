@@ -7794,17 +7794,29 @@ h4 {
 .views-field {
   padding-bottom: 1em;
 }
-.node-type-page .region-content {
-  /*background: rgba(255,255,255, .85);*/
-}
 .btn {
   text-transform: uppercase;
 }
-article.node-page {
+article.node-page,
+article.node-faculty,
+article.node-instrument {
   background-color: rgba(255, 255, 255, 0.85);
   padding: 45px;
 }
-ol > li {
+article.node-page .field-label,
+article.node-faculty .field-label,
+article.node-instrument .field-label {
+  padding: .5em 0px;
+  text-transform: uppercase;
+}
+article.node-page .field-item,
+article.node-faculty .field-item,
+article.node-instrument .field-item {
+  padding-bottom: 1em;
+}
+article.node-page ol > li,
+article.node-faculty ol > li,
+article.node-instrument ol > li {
   padding-bottom: .5em;
 }
 .attention {
@@ -7883,6 +7895,9 @@ ol > li {
 .end .field-item {
   font-size: 34px;
   font-family: 'Bad Script', cursive;
+}
+.front article.node-page {
+  background: none;
 }
 #home-row .left,
 #home-row .center,
