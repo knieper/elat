@@ -7789,6 +7789,10 @@ h4 {
 .btn {
   text-transform: uppercase;
 }
+article.node-page {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 45px;
+}
 .attention {
   color: white;
   padding: 30px 0px 30px 0px;
