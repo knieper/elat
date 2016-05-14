@@ -227,21 +227,24 @@ h1, h2, h3, h4 {
 }
 
 //==node defaults
-article.node-page,
-article.node-faculty,
-article.node-instrument{
-  background-color: rgba(255,255,255, .85);
-  padding: 45px;
-  .field-label{
-    padding: .5em 0px;
-    text-transform: uppercase;
-  }
-  .field-item{
-    padding-bottom: 1em;
-  }
-  //add spacing for numbered lists
-  ol > li {
+article{
+  &.node-page,
+  &.node-faculty,
+  &.node-instrument,
+  &.node-timeline-item{
+    background-color: rgba(255,255,255, .85);
+    padding: 45px;
+    .field-label{
+      padding: .5em 0px;
+      text-transform: uppercase;
+    }
+    .field-item{
+      padding-bottom: 1em;
+    }
+    //add spacing for numbered lists
+    ol > li {
       padding-bottom: .5em;
+    }
   }
 }
 //== Case study specifics
@@ -329,20 +332,20 @@ article.node-instrument{
       &:hover,
       &:focus,
       &:active{
-        //background: rgba(255,255,255, .5);
         background: rgba(255, 203, 5, .3);
       }
     }
+  }
     a{
       color: white;
       text-transform: uppercase;
       font-size:@font-size-h3;
-      margin: 10% 0;
+      margin: 10% 1%;
       display:block;
       min-height: 1em;
-      @media @tablet{
-        min-height: 4.285em;
-        margin: 20% 0px;
+      @media @normal{
+        min-height: 5.714em;
+        margin: 20% 5%;
       }
       &:hover,
       &:focus,
@@ -350,13 +353,76 @@ article.node-instrument{
         text-decoration:none;
       }
     }
-  }
-  .right {
-     @media @normal{
-       a{ margin: 25% 0px 15% 0px;}
-   }
-  }
+  .left, .right {
+     a {
+      // @media @normal{ margin: 35% 0px 15% 0px;}
+       }
+     }
+}
 
+//==timeline
+.view-history{
+  .views-row{
+    clear:both;
+  }
+  .field-name-field-date{
+    font-size: @font-size-h2;
+  }
+  .views-row-even{
+    .timeline-image{
+      float:right;
+      padding-right: 0px;
+      > div.caption{
+        right: 100%;
+        text-align: right;
+      }
+    }
+    .views-field-title.col-md-6,
+    .views-field-field-related-information-1.col-md-6{
+      padding-left: 0px;
+    }
+  }
+  .views-row-odd {
+    .timeline-image{
+      padding-left: 0px;
+      > div.caption{
+        left: 100%;
+      }
+    }
+    .views-field-title.col-md-6,
+    .views-field-field-related-information-1.col-md-6{
+      padding-left: 0px;
+    }
+  }
+  .views-field-field-timeline-image-caption{
+    padding-bottom: 0px;
+  }
+  .timeline-image{
+    position: relative;
+    margin-bottom: 2em;
+    > div.caption{
+      position: absolute;
+      bottom: 0;
+      font-size: smaller;
+      color: grey;
+      width: 100%;
+    }
+  }
+  .views-field-title{
+    font-size: @font-size-h3;
+  }
+  .views-field-field-related-information-1{
+    font-size: smaller;
+    p{
+      margin-bottom: 0px;
+    }
+    ul {
+      padding: 0px;
+    }
+    li{
+      list-style: none;
+    }
+  }
 }
 
 .navbar.container {

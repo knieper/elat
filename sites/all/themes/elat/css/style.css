@@ -7799,24 +7799,28 @@ h4 {
 }
 article.node-page,
 article.node-faculty,
-article.node-instrument {
+article.node-instrument,
+article.node-timeline-item {
   background-color: rgba(255, 255, 255, 0.85);
   padding: 45px;
 }
 article.node-page .field-label,
 article.node-faculty .field-label,
-article.node-instrument .field-label {
+article.node-instrument .field-label,
+article.node-timeline-item .field-label {
   padding: .5em 0px;
   text-transform: uppercase;
 }
 article.node-page .field-item,
 article.node-faculty .field-item,
-article.node-instrument .field-item {
+article.node-instrument .field-item,
+article.node-timeline-item .field-item {
   padding-bottom: 1em;
 }
 article.node-page ol > li,
 article.node-faculty ol > li,
-article.node-instrument ol > li {
+article.node-instrument ol > li,
+article.node-timeline-item ol > li {
   padding-bottom: .5em;
 }
 .attention {
@@ -7923,39 +7927,81 @@ article.node-instrument ol > li {
 #home-row .right div:active {
   background: rgba(255, 203, 5, 0.3);
 }
-#home-row .left a,
-#home-row .center a,
-#home-row .right a {
+#home-row a {
   color: white;
   text-transform: uppercase;
   font-size: 28px;
-  margin: 10% 0;
+  margin: 10% 1%;
   display: block;
   min-height: 1em;
 }
-@media screen and (min-width: 768px) {
-  #home-row .left a,
-  #home-row .center a,
-  #home-row .right a {
-    min-height: 4.285em;
-    margin: 20% 0px;
+@media screen and (min-width: 992px) {
+  #home-row a {
+    min-height: 5.714em;
+    margin: 20% 5%;
   }
 }
-#home-row .left a:hover,
-#home-row .center a:hover,
-#home-row .right a:hover,
-#home-row .left a:focus,
-#home-row .center a:focus,
-#home-row .right a:focus,
-#home-row .left a:active,
-#home-row .center a:active,
-#home-row .right a:active {
+#home-row a:hover,
+#home-row a:focus,
+#home-row a:active {
   text-decoration: none;
 }
-@media screen and (min-width: 992px) {
-  #home-row .right a {
-    margin: 25% 0px 15% 0px;
-  }
+.view-history .views-row {
+  clear: both;
+}
+.view-history .field-name-field-date {
+  font-size: 34px;
+}
+.view-history .views-row-even .timeline-image {
+  float: right;
+  padding-right: 0px;
+}
+.view-history .views-row-even .timeline-image > div.caption {
+  right: 100%;
+  text-align: right;
+}
+.view-history .views-row-even .views-field-title.col-md-6,
+.view-history .views-row-even .views-field-field-related-information-1.col-md-6 {
+  padding-left: 0px;
+}
+.view-history .views-row-odd .timeline-image {
+  padding-left: 0px;
+}
+.view-history .views-row-odd .timeline-image > div.caption {
+  left: 100%;
+}
+.view-history .views-row-odd .views-field-title.col-md-6,
+.view-history .views-row-odd .views-field-field-related-information-1.col-md-6 {
+  padding-left: 0px;
+}
+.view-history .views-field-field-timeline-image-caption {
+  padding-bottom: 0px;
+}
+.view-history .timeline-image {
+  position: relative;
+  margin-bottom: 2em;
+}
+.view-history .timeline-image > div.caption {
+  position: absolute;
+  bottom: 0;
+  font-size: smaller;
+  color: grey;
+  width: 100%;
+}
+.view-history .views-field-title {
+  font-size: 28px;
+}
+.view-history .views-field-field-related-information-1 {
+  font-size: smaller;
+}
+.view-history .views-field-field-related-information-1 p {
+  margin-bottom: 0px;
+}
+.view-history .views-field-field-related-information-1 ul {
+  padding: 0px;
+}
+.view-history .views-field-field-related-information-1 li {
+  list-style: none;
 }
 @media (min-width: 768px) {
   .navbar.container {
