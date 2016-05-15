@@ -86,7 +86,7 @@
       <?php if (!empty($site_name)): ?>
           <a class="name" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
       	<?php if (!empty($site_slogan)): ?>
-      		<br /><?php print $site_slogan; ?>
+      		<p class="hidden-xs"><?php print $site_slogan; ?></p>
       	<?php endif; ?>
 	  <?php endif; ?>
 

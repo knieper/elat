@@ -101,7 +101,7 @@ a {
   &.name {
     text-transform: uppercase;
     color: white;
-    font-size: @font-size-h4;
+    font-size: @font-size-h3;
     @media @tablet {
       font-size: @font-size-h1;
     }
@@ -110,6 +110,7 @@ a {
     &:active,
     &.active{
       border-bottom: 1px solid white;
+      text-decoration: none;
     }
     &:visited{
       color: white;
@@ -202,27 +203,17 @@ h1, h2, h3, h4 {
 .btn{
   text-transform: uppercase;
 }
-
-//== Mixins
-.button-variant(@color; @background; @border) {
-  color: @color;
-  background-color: @background;
-  border-color: @border;
-
+//not sure this is a good color but better than the default blue
+.btn{
   &:focus,
-  &.focus {
-    color: @color;
-  //  background-color: darken(@background, 10%);
-    //    border-color: darken(@border, 25%);
-      background-color: darken(mix(#ff0000, @background, 7%),3%);
-        border-color: darken(mix(#ff0000, @border, 7%), 7%);
-  }
-  &:hover {
-    color: @color;
-  //  background-color: darken(@background, 10%);
-  //      border-color: darken(@border, 12%);
-      background-color: darken(mix(#ff0000, @background, 7%),3%);
-      border-color: darken(mix(#ff0000, @border, 7%), 7%);
+  &.focus,
+  &:active:focus,
+  &.active:focus,
+  &:active.focus,
+  &.active.focus {
+    outline: thin dotted;
+    outline: 5px auto lighten(@btn-default-bg, 20%);
+    outline-offset: -2px;
   }
 }
 
@@ -359,6 +350,7 @@ article{
        }
      }
 }
+
 
 //==timeline
 .view-history{
