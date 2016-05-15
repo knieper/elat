@@ -7679,6 +7679,9 @@ b {
   right: 0;
   left: initial;
 }
+.main-menu li a.active-trail {
+  color: #d1a600;
+}
 .dropdown-menu > li > a:hover,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > li > a:focus,
@@ -7713,9 +7716,9 @@ a.name {
 }
 a.name:hover,
 a.name:focus,
-a.name:active {
+a.name:active,
+a.name.active {
   border-bottom: 1px solid white;
-  text-decoration: none;
 }
 a.name:visited {
   color: white;
@@ -7738,9 +7741,14 @@ a.name:visited {
 }
 .region-util-navigation .nav a:hover,
 .region-util-navigation .nav a:focus,
-.region-util-navigation .nav a:active {
+.region-util-navigation .nav a:active,
+.region-util-navigation .nav a.active {
   color: #FFCB05;
   /*official yellow*/
+  text-decoration: underline;
+}
+.region-util-navigation .nav a.active-trail {
+  text-decoration: none;
 }
 #footer-wrapper {
   background-color: #333;
