@@ -7855,43 +7855,29 @@ article.node-timeline-item ol > li {
 .front article.node-page {
   background: none;
 }
-#home-row .left,
-#home-row .center,
-#home-row .right {
+#home-row {
   font-family: 'robotothin';
-  padding-bottom: 1em;
-}
-#home-row .left div,
-#home-row .center div,
-#home-row .right div {
-  border: 2px solid white;
   text-align: center;
-  height: 100%;
 }
-#home-row .left div:hover,
-#home-row .center div:hover,
-#home-row .right div:hover,
-#home-row .left div:focus,
-#home-row .center div:focus,
-#home-row .right div:focus,
-#home-row .left div:active,
-#home-row .center div:active,
-#home-row .right div:active {
+#home-row > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 14em;
+  margin-bottom: 1em;
+  border: 2px solid white;
+}
+#home-row > div > div:hover,
+#home-row > div > div:focus,
+#home-row > div > div:active {
   background: rgba(255, 203, 5, 0.3);
 }
 #home-row a {
   color: white;
   text-transform: uppercase;
   font-size: 28px;
-  margin: 10% 1%;
   display: block;
-  min-height: 1em;
-}
-@media screen and (min-width: 992px) {
-  #home-row a {
-    min-height: 5.714em;
-    margin: 20% 5%;
-  }
+  padding: .5em;
 }
 #home-row a:hover,
 #home-row a:focus,
