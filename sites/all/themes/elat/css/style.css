@@ -7741,10 +7741,6 @@ a.name:visited {
 .region-util-navigation .nav a:active {
   color: #FFCB05;
   /*official yellow*/
-  text-decoration: underline;
-}
-.region-util-navigation .nav a:visited {
-  color: white;
 }
 #footer-wrapper {
   background-color: #333;
