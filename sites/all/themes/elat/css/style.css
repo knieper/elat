@@ -7950,6 +7950,9 @@ article.node-timeline-item ol > li {
 }
 .view-history .field-name-field-date {
   font-size: 34px;
+  border-bottom: 2px solid #cdcdcd;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 .view-history .views-field-title {
   padding-bottom: 15px;
