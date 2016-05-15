@@ -23,15 +23,16 @@
  *
  * @ingroup views_templates
  */
+ /* This template adds the bootstrap col-sm-6 classes to two field wrappers. For some reason the usual views adding of classes is failing. The image wrapper is being rewritten in the view to add a class.*/
 ?>
 
 <?php foreach ($fields as $id => $field): ;?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
   <?php endif; ?>
-  <?php //print dpm(($row->field_field_timeline_image_caption[0])); ?>
-  <?php if($view->name == 'history' && $field->class == 'title' && isset($row->field_field_timeline_image_caption[0])){ $field->wrapper_prefix ='<div class="views-field views-field-title col-md-6">'; }  ?>
-  <?php if($view->name == 'history' && $field->class == 'field-related-information-1' && isset($row->field_field_timeline_image_caption[0])){ $field->wrapper_prefix ='<div class="views-field views-field-field-related-information-1 col-md-6">'; }  ?>
+  
+  <?php if($view->name == 'history' && $field->class == 'title' && isset($row->field_field_timeline_image_caption[0])){ $field->wrapper_prefix ='<div class="views-field views-field-title col-sm-6">'; }  ?>
+  <?php if($view->name == 'history' && $field->class == 'field-related-information-1' && isset($row->field_field_timeline_image_caption[0])){ $field->wrapper_prefix ='<div class="views-field views-field-field-related-information-1 col-sm-6">'; }  ?>
 
   <?php print $field->wrapper_prefix; ?>
     <?php print $field->label_html; ?>

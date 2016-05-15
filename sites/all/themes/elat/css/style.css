@@ -7687,7 +7687,6 @@ b {
 }
 .navbar-default .navbar-collapse {
   clear: both;
-  margin-top: 1em;
   padding: 0px;
   margin-left: -15px;
   margin-right: -15px;
@@ -7952,6 +7951,9 @@ article.node-timeline-item ol > li {
 .view-history .field-name-field-date {
   font-size: 34px;
 }
+.view-history .views-field-title {
+  padding-bottom: 15px;
+}
 .view-history .views-row-even .timeline-image {
   float: right;
   padding-right: 0px;
@@ -7960,8 +7962,8 @@ article.node-timeline-item ol > li {
   right: 100%;
   text-align: right;
 }
-.view-history .views-row-even .views-field-title.col-md-6,
-.view-history .views-row-even .views-field-field-related-information-1.col-md-6 {
+.view-history .views-row-even .views-field-title.col-sm-6,
+.view-history .views-row-even .views-field-field-related-information-1.col-sm-6 {
   padding-left: 0px;
 }
 .view-history .views-row-odd .timeline-image {
@@ -7970,8 +7972,8 @@ article.node-timeline-item ol > li {
 .view-history .views-row-odd .timeline-image > div.caption {
   left: 100%;
 }
-.view-history .views-row-odd .views-field-title.col-md-6,
-.view-history .views-row-odd .views-field-field-related-information-1.col-md-6 {
+.view-history .views-row-odd .views-field-title.col-sm-6,
+.view-history .views-row-odd .views-field-field-related-information-1.col-sm-6 {
   padding-left: 0px;
 }
 .view-history .views-field-field-timeline-image-caption {
@@ -7982,11 +7984,15 @@ article.node-timeline-item ol > li {
   margin-bottom: 2em;
 }
 .view-history .timeline-image > div.caption {
-  position: absolute;
   bottom: 0;
   font-size: smaller;
   color: grey;
   width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .view-history .timeline-image > div.caption {
+    position: absolute;
+  }
 }
 .view-history .views-field-title {
   font-size: 28px;
@@ -8003,21 +8009,20 @@ article.node-timeline-item ol > li {
 .view-history .views-field-field-related-information-1 li {
   list-style: none;
 }
-@media (min-width: 768px) {
-  .navbar.container {
+/*
+.navbar.container {
+  @media (min-width: @screen-sm-min) {
+    //width: @container-sm;
     width: auto;
-    max-width: 992px;
+    max-width:@screen-md-min;
+  }
+  @media (min-width: @screen-md-min) {
+    width: auto;
+    max-width: @container-lg;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: auto;
+    max-width: @screen-lg-min;
   }
 }
-@media (min-width: 992px) {
-  .navbar.container {
-    width: auto;
-    max-width: 1170px;
-  }
-}
-@media (min-width: 1200px) {
-  .navbar.container {
-    width: auto;
-    max-width: 1200px;
-  }
-}
+*/

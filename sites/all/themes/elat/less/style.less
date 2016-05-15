@@ -82,7 +82,6 @@ strong, b{
 //==alignment of nav when collapsed
 .navbar-default .navbar-collapse{
   clear:both;
-  margin-top: 1em;
   padding: 0px;
   margin-left: -15px;
   margin-right: -15px;
@@ -368,6 +367,7 @@ article{
   .field-name-field-date{
     font-size: @font-size-h2;
   }
+  .views-field-title{ padding-bottom: 15px;}
   .views-row-even{
     .timeline-image{
       float:right;
@@ -377,8 +377,8 @@ article{
         text-align: right;
       }
     }
-    .views-field-title.col-md-6,
-    .views-field-field-related-information-1.col-md-6{
+    .views-field-title.col-sm-6,
+    .views-field-field-related-information-1.col-sm-6{
       padding-left: 0px;
     }
   }
@@ -389,8 +389,8 @@ article{
         left: 100%;
       }
     }
-    .views-field-title.col-md-6,
-    .views-field-field-related-information-1.col-md-6{
+    .views-field-title.col-sm-6,
+    .views-field-field-related-information-1.col-sm-6{
       padding-left: 0px;
     }
   }
@@ -401,7 +401,7 @@ article{
     position: relative;
     margin-bottom: 2em;
     > div.caption{
-      position: absolute;
+      @media @normal{ position: absolute;}
       bottom: 0;
       font-size: smaller;
       color: grey;
@@ -424,7 +424,7 @@ article{
     }
   }
 }
-
+/*
 .navbar.container {
   @media (min-width: @screen-sm-min) {
     //width: @container-sm;
@@ -440,3 +440,4 @@ article{
     max-width: @screen-lg-min;
   }
 }
+*/
