@@ -7855,6 +7855,31 @@ article.node-timeline-item ol > li {
 .front article.node-page {
   background: none;
 }
+#home-announcement {
+  clear: both;
+  color: white;
+  text-align: center;
+  font-family: 'bad script';
+  font-size: 28px;
+  padding: 1em;
+  border: 2px solid #d1a600;
+  background: rgba(255, 203, 5, 0.3);
+  margin: auto;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  #home-announcement {
+    width: 70%;
+  }
+}
+#home-announcement a {
+  color: white;
+  display: block;
+}
+#home-announcement:hover,
+#home-announcement:focus {
+  background: rgba(255, 203, 5, 0.5);
+}
 #home-row {
   font-family: 'robotothin';
   text-align: center;
@@ -7864,7 +7889,7 @@ article.node-timeline-item ol > li {
   flex-direction: column;
   justify-content: center;
   min-height: 14em;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
   border: 2px solid white;
 }
 #home-row > div > div:hover,

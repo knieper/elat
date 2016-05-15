@@ -316,18 +316,45 @@ article{
 .front article.node-page {
   background: none;
 }
+#home-announcement{
+  clear: both;
+  color: white;
+  text-align:center;
+  font-family:'bad script';
+  font-size:@font-size-h3;
+  padding: 1em;
+  border: 2px solid darken(#FFCB05, 10%);
+  background: rgba(255, 203, 5, .3);
+  margin: auto;
+  width:100%;
+  @media @normal{width: 70%;}
+  a{
+    color: white;
+    display:block;
+  }
+  &:hover,
+  &:focus{
+    background: rgba(255, 203, 5, .5);
+    a{
+    //  color: @link-color;
+    }
+  }
+
+}
+
 #home-row {
   font-family: 'robotothin';
   text-align: center;
 
   >div{
+
     >div{
       display:flex;
       flex-direction:column;
       justify-content:center;
       min-height:14em;
 
-      margin-bottom: 1em;
+      margin-bottom: 4em;
       border: 2px solid white;
       &:hover,
       &:focus,
