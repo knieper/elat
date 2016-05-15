@@ -7,3 +7,7 @@ sites/*/private
 
 #ignore htaccess
 .htaccess
+
+sites/*/modules/features
+sites/*/modules/devel
+sites/*/modules/security_review
