@@ -7553,14 +7553,12 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   width: 24rem;
 }
 body {
-  background-image: url('../img/Visit-to-StJoesHospital-farm.jpg');
-  background-image: url('../img/The-Quito-Project.jpg');
-  background-image: url('../img/Grese-class-at-RadrickForest-DaveBrenner-photo.jpg');
+  background-image: url('../img/Grese-class-at-RadrickForest-opt.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
 body.page-goals {
-  background-image: url('../img/GVSU-Dance.jpg');
+  background-image: url('../img/GVSU-Dance-opt.jpg');
 }
 body.node-type-case-study,
 body.node-type-faculty,
@@ -7570,7 +7568,7 @@ body.page-tltc-funded-projects {
 body.page-instruments,
 body.node-type-instrument,
 body.page-node-9 {
-  background-image: url('../img/Ancient.World.jpg');
+  background-image: url('../img/Ancient.World-opt.jpg');
 }
 strong,
 b {
