@@ -7974,10 +7974,12 @@ article.node-timeline-item ol > li {
 .view-history .views-field-field-related-information-1 li {
   list-style: none;
 }
-.view-instruments .views-field-field-learning-goal ul {
+.view-instruments .views-field-field-learning-goal ul,
+.view-examples-of-engaged-learning .views-field-field-learning-goal ul {
   padding-left: 0px;
 }
-.view-instruments .views-field-field-learning-goal li {
+.view-instruments .views-field-field-learning-goal li,
+.view-examples-of-engaged-learning .views-field-field-learning-goal li {
   list-style: none;
 }
 /*
