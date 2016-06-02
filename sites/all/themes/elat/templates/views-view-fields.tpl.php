@@ -25,7 +25,6 @@
  */
  /* This template adds the bootstrap col-sm-6 classes to two field wrappers. For some reason the usual views adding of classes is failing. The image wrapper is being rewritten in the view to add a class.*/
 ?>
-
 <?php foreach ($fields as $id => $field): ;?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>

@@ -451,6 +451,34 @@ article{
     li{ list-style:none;}
   }
 }
+.view-instruments {
+  [data-toggle="collapse"]:after{
+    font-family: 'Glyphicons Halflings';
+    content: "\e114"; /* 'chevron down' */
+
+    padding-right: 5px;
+    display: inline-block;
+    vertical-align: top;
+
+    -webkit-transform: rotate(-180deg);
+    -moz-transform:    rotate(-180deg);
+    -ms-transform:     rotate(-180deg);
+    -o-transform:      rotate(-180deg);
+    transform:         rotate(-180deg);
+  }
+  [data-toggle="collapse"].collapsed:after{
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-transform: rotate(0deg);
+    -moz-transform:    rotate(0deg);
+    -ms-transform:     rotate(0deg);
+    -o-transform:      rotate(0deg);
+    transform:         rotate(0deg);
+  }
+}
+
+
 /*
 .navbar.container {
   @media (min-width: @screen-sm-min) {
