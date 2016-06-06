@@ -1,6 +1,6 @@
 AddDefaultCharset utf-8
 FileETag MTime Size
-<FilesMatch "\.(html|json)(\.gz)?$">
+<FilesMatch "\.(html)(\.gz)?$">
   <IfModule mod_expires.c>
     ExpiresDefault A5
   </IfModule>
@@ -14,14 +14,10 @@ FileETag MTime Size
 </FilesMatch>
 <IfModule mod_mime.c>
   AddCharset utf-8 .html
-  AddCharset utf-8 .json
   AddEncoding gzip .gz
 </IfModule>
 <FilesMatch "\.html(\.gz)?$">
   ForceType text/html
-</FilesMatch>
-<FilesMatch "\.json(\.gz)?$">
-  ForceType text/javascript
 </FilesMatch>
 
 SetHandler Drupal_Security_Do_Not_Remove_See_SA_2006_006
