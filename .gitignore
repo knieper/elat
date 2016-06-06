@@ -7,3 +7,6 @@ sites/*/private
 
 #ignore devel
 sites/all/modules/devel
+
+#ignore specific cache directories
+cache/*/elat
