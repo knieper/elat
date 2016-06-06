@@ -1,31 +1,30 @@
 (function($) {
 Drupal.behaviors.elat = {
   attach: function (context, settings) {
-
-    //code starts
-    $("#methods").click(function() {
+    $("#methods").on('click mouseover', function() {
       $('#explanatory-text').children('div').addClass('hidden');
       $('#methods-text').removeClass('hidden');
     });
     
-    $("#objectives").click(function() {
+    $("#objectives").on('click mouseover', function() {
       $('#explanatory-text').children('div').addClass('hidden');
       $('#objectives-text').removeClass('hidden');
     });
     
-     $("#analyze").click(function() {
+     $("#analyze").on('click mouseover', function() {
       $('#explanatory-text').children('div').addClass('hidden');
       $('#analyze-text').removeClass('hidden');
     });
     
-     $("#use").click(function() {
+     $("#use").on('click mouseover', function() {
       $('#explanatory-text').children('div').addClass('hidden');
       $('#use-text').removeClass('hidden');
     });
     
-     $("#assessment").click(function() {
+     $("#assessment").on('click mouseover', function() {
       $('#explanatory-text').children('div').addClass('hidden');
       $('#assessment-text').removeClass('hidden');
+      
     });
   }
 };
