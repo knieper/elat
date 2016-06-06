@@ -8005,6 +8005,37 @@ article.node-timeline-item ol > li {
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
 }
+.objectives:hover path,
+.objectives:active path {
+  fill: #86a441;
+  stroke: 666666;
+}
+.methods:hover path,
+.methods:focus path {
+  fill: #439b50;
+  stroke: 666666;
+}
+.assessment:hover path,
+.assessment:focus path {
+  fill: #469690;
+  stroke: 666666;
+}
+.analyze:hover path,
+.analyze:focus path {
+  fill: #4c6693;
+  stroke: 666666;
+}
+.use:hover path,
+.use:focus path {
+  fill: #6d528e;
+  stroke: 666666;
+}
+.learn-more {
+  padding-top: 45px;
+}
+.learn-more a {
+  white-space: normal;
+}
 /*
 .navbar.container {
   @media (min-width: @screen-sm-min) {
