@@ -7,8 +7,13 @@
 // svg_sanitizer global variables
 define('SVG_SANITIZER_URL', 'https://github.com/darylldoyle/svg-sanitizer');
 
-// Load the svg_sanitizer library
-libraries_load('svg_sanitizer');
+/**
+ * Implements hook_init().
+ */
+function svg_sanitizer_init() {
+  // Load the svg_sanitizer library
+  libraries_load('svg_sanitizer');
+}
 
 /**
  * Impliments hook_libraries_info
