@@ -11,9 +11,10 @@ body{
     &.page-goals{
       background-image: url('../img/GVSU-Dance-opt.jpg');
     }
-    &.node-type-case-study,
+    &.node-type-showcase,
     &.node-type-faculty,
-    &.page-tltc-funded-projects{
+    &.page-tltc-funded-projects,
+    &.page-showcase-browse{
       background-image: url('../img/Light-bulb-on-blue-flipped-right.jpg');
     }
     &.page-instruments,
@@ -240,7 +241,7 @@ article{
   padding: 45px;
 }
 
-//== Case study specifics
+//== showcase specifics
 .attention{
   color: white;
   padding: 30px 0px 30px 0px;
@@ -306,6 +307,22 @@ article{
   .field-item{
     font-size: @font-size-h2;
     font-family: 'Bad Script', cursive;
+  }
+  .return{
+    width: 100%;
+    @media @tablet{ width: 80%;}
+    padding-top: 60px;
+    margin:auto;
+    text-align: center;
+    a{
+      color:white;
+      text-decoration: underline;
+      &:hover,
+      &:focus,
+      &:active{
+          color:@link-hover-color;
+      }
+    }
   }
 }
 
@@ -516,8 +533,87 @@ article{
     white-space: normal;
   }
 }
+//==showcase browse styles
+#showcaseBrowse{
+  color: white;
+  .carousel-inner{
+    width:90%;
+    margin:auto;
+    .active.left { left: 33%;  }
+    .active.right { left: -33%;  }
+    .next{ left: -33%; }
+    .prev { left: 33%; }
+  }
+  .item > div{
 
+    min-height:26em;
+    text-align: center;
 
+  }
+  .views-field{
+    padding-bottom: 2em;
+  }
+  .views-field-title{
+    text-transform: uppercase;
+  }
+  .views-field-body{
+    font-family: 'Bad Script', cursive;
+    font-size:@font-size-h3;
+  }
+  .views-field-view-node{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: white solid 2px;
+    text-transform: uppercase;
+    padding:5%;
+    margin:5%;
+    width: 90%;
+    a{
+      color:white;
+      display: block;
+      &:hover,
+      &:focus,
+      &:active{
+        text-decoration: none;
+      }
+    }
+    &:hover,
+    &:focus,
+    &:active{
+      background: rgba(255, 203, 5, .3);
+    }
+
+  }
+  .view-footer{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 90%;
+    margin:auto;
+    text-align: center;
+    a{
+      color:white;
+      text-decoration:underline;
+      &:hover,
+      &:focus,
+      &:active{
+          color:@link-hover-color;
+      }
+    }
+  }
+}
+
+.carousel-control.right,
+.carousel-control.left{
+  background: none;
+  width: 5%;
+}
+
+.page-showcase-browse .page-header{
+  background: none;
+  color: white;
+  text-align: center;
+}
 
 /*
 .navbar.container {

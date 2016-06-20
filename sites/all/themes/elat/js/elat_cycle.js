@@ -1,5 +1,5 @@
 (function($) {
-Drupal.behaviors.elat = {
+Drupal.behaviors.elatCycle = {
   attach: function (context, settings) {
     $("#methods").on('click mouseover', function() {
       $('#explanatory-text').children('div').addClass('hidden');
@@ -23,8 +23,7 @@ Drupal.behaviors.elat = {
     
      $("#assessment").on('click mouseover', function() {
       $('#explanatory-text').children('div').addClass('hidden');
-      $('#assessment-text').removeClass('hidden');
-      
+      $('#assessment-text').removeClass('hidden'); 
     });
   }
 };

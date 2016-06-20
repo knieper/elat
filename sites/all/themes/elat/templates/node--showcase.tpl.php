@@ -124,7 +124,7 @@
   		<?php print render($content['field_assessment_plan']); ?>
   	</div>
   <?php endif; ?>
-  
+
   <?php if (!empty($content['field_video']) || !empty($content['field_images'])): ?>
   	<div class="right col-md-6">
   		<?php print render($content['field_video']); ?>
@@ -136,9 +136,10 @@
   <div class="end col-xs-12">
   	<?php if(!empty($content)): ?>
   	<?php print render($content); ?> <!--should be only lessons learned field -->
+    <div class="return"><p><a href="/showcase-browse">Return to all showcases</a></p></div>
   </div>
    <?php endif; ?>
-   
+
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
     <?php print render($content['field_tags']); ?>
