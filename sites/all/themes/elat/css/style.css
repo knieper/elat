@@ -7592,6 +7592,7 @@ b {
 }
 .main-menu {
   font-family: 'robotothin';
+  font-family: arial;
   font-size: 20px;
   text-transform: uppercase;
   padding-bottom: 35px;
