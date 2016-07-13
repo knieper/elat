@@ -7560,9 +7560,10 @@ body {
 body.page-goals {
   background-image: url('../img/GVSU-Dance-opt.jpg');
 }
-body.node-type-case-study,
+body.node-type-showcase,
 body.node-type-faculty,
-body.page-tltc-funded-projects {
+body.page-tltc-funded-projects,
+body.page-showcase-browse {
   background-image: url('../img/Light-bulb-on-blue-flipped-right.jpg');
 }
 body.page-instruments,
@@ -7850,6 +7851,26 @@ article.node-timeline-item ol > li {
   font-size: 34px;
   font-family: 'Bad Script', cursive;
 }
+.end .return {
+  width: 100%;
+  padding-top: 60px;
+  margin: auto;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .end .return {
+    width: 80%;
+  }
+}
+.end .return a {
+  color: white;
+  text-decoration: underline;
+}
+.end .return a:hover,
+.end .return a:focus,
+.end .return a:active {
+  color: #d1a600;
+}
 .front article.node-page {
   background: none;
 }
@@ -8035,6 +8056,89 @@ article.node-timeline-item ol > li {
 }
 .learn-more a {
   white-space: normal;
+}
+#showcaseBrowse {
+  color: white;
+}
+#showcaseBrowse .carousel-inner {
+  width: 90%;
+  margin: auto;
+}
+#showcaseBrowse .carousel-inner .active.left {
+  left: 33%;
+}
+#showcaseBrowse .carousel-inner .active.right {
+  left: -33%;
+}
+#showcaseBrowse .carousel-inner .next {
+  left: -33%;
+}
+#showcaseBrowse .carousel-inner .prev {
+  left: 33%;
+}
+#showcaseBrowse .item > div {
+  min-height: 26em;
+  text-align: center;
+}
+#showcaseBrowse .views-field {
+  padding-bottom: 2em;
+}
+#showcaseBrowse .views-field-title {
+  text-transform: uppercase;
+}
+#showcaseBrowse .views-field-body {
+  font-family: 'Bad Script', cursive;
+  font-size: 28px;
+}
+#showcaseBrowse .views-field-view-node {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: white solid 2px;
+  text-transform: uppercase;
+  padding: 5%;
+  margin: 5%;
+  width: 90%;
+}
+#showcaseBrowse .views-field-view-node a {
+  color: white;
+  display: block;
+}
+#showcaseBrowse .views-field-view-node a:hover,
+#showcaseBrowse .views-field-view-node a:focus,
+#showcaseBrowse .views-field-view-node a:active {
+  text-decoration: none;
+}
+#showcaseBrowse .views-field-view-node:hover,
+#showcaseBrowse .views-field-view-node:focus,
+#showcaseBrowse .views-field-view-node:active {
+  background: rgba(255, 203, 5, 0.3);
+}
+#showcaseBrowse .view-footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+#showcaseBrowse .view-footer a {
+  color: white;
+  text-decoration: underline;
+}
+#showcaseBrowse .view-footer a:hover,
+#showcaseBrowse .view-footer a:focus,
+#showcaseBrowse .view-footer a:active {
+  color: #d1a600;
+}
+.carousel-control.right,
+.carousel-control.left {
+  background: none;
+  width: 5%;
+}
+.page-showcase-browse .page-header {
+  background: none;
+  color: white;
+  text-align: center;
 }
 /*
 .navbar.container {
