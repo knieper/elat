@@ -136,7 +136,8 @@
   <div class="end col-xs-12">
   	<?php if(!empty($content)): ?>
   	<?php print render($content); ?> <!--should be only lessons learned field -->
-    <div class="return"><p><a href="/showcase-browse">Return to all showcases</a></p></div>
+  	<?php global $base_url; $return_link = $base_url.'/showcase-browse';?>
+    <?php print '<div class="return"><p><a href="'.$return_link.'">Return to all showcases</a></p></div>'?>
   </div>
    <?php endif; ?>
 
