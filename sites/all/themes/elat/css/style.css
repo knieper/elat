@@ -7812,10 +7812,10 @@ article.node-timeline-item ol > li {
 }
 .beginning .field-name-title {
   text-transform: uppercase;
-  padding-bottom: .5em;
 }
 .beginning .field-name-field-faculty-title {
   font-size: smaller;
+  padding-bottom: .5em;
 }
 .middle {
   background-color: rgba(255, 255, 255, 0.85);
