@@ -10,3 +10,6 @@ sites/all/modules/devel
 
 #ignore specific cache directories
 cache/*
+
+#ignore some svg test stuff
+sites/all/libraries/svg_sanitizer/tests/data/
