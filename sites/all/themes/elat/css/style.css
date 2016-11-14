@@ -8193,12 +8193,12 @@ article.node-timeline-item ol > li {
 }
 .view-id-goals .views-row .inner {
   background-color: rgba(255, 255, 255, 0.85);
-  padding: 20px;
+  padding: 45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  min-height: 28em;
+  min-height: 32em;
 }
 .view-id-goals .views-row .inner:hover,
 .view-id-goals .views-row .inner:focus,
