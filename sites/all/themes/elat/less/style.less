@@ -5,7 +5,7 @@
 @import 'overrides';
 
 body{
-    background-image: url('../img/Grese-class-at-RadrickForest-opt.jpg');
+    background-image: url('../img/PS1-image.jpeg');
   	background-size: cover;
   	background-attachment: fixed;
     &.page-goals{
@@ -46,7 +46,7 @@ strong, b{
 .main-menu{
   font-family: 'robotothin';
   font-size: @font-size-h4;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   padding-bottom: 35px;
   li{
     ul.dropdown-menu{
@@ -160,7 +160,7 @@ a {
 }
 
 h1, h2, h3, h4 {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 //== Drupal views
@@ -261,7 +261,8 @@ article{
   }
   p:first-child{
     font-size: @font-size-h2;
-    font-family: 'Bad Script', cursive;
+  /*  font-family: 'Bad Script', cursive;*/
+    font-family: 'special';
     text-align: center;
   }
 }
@@ -311,7 +312,8 @@ article{
   }
   .field-item{
     font-size: @font-size-h2;
-    font-family: 'Bad Script', cursive;
+    /*font-family: 'Bad Script', cursive;*/
+    font-family: 'special';
   }
   .return{
     width: 100%;
@@ -339,7 +341,8 @@ article{
   clear: both;
   color: white;
   text-align:center;
-  font-family:'bad script';
+  /*font-family:'bad script';*/
+  font-family: 'special';
   font-size:@font-size-h3;
   padding: 1em;
   border: 2px solid darken(#FFCB05, 10%);
@@ -375,15 +378,18 @@ article{
 
       margin-bottom: 4em;
       border: 2px solid white;
+    /*  background-color: rgba(255,255,255, .85);*/
+      background-color: rgba(0, 39, 76, 0.85);
       &:hover,
       &:focus,
       &:active{
         background: rgba(255, 203, 5, .3);
+      /*  background: white;*/
       }
     }
   }
   a{
-    color: white;
+   color: white;
     text-transform: uppercase;
     font-size:@font-size-h3;
     display:block;
@@ -396,7 +402,7 @@ article{
   }
 }
 
-//==timeline
+//==timeline specifics
 .view-history{
   .views-row{
     clear:both;
@@ -551,7 +557,7 @@ article{
   }
   .item > div{
 
-    min-height:26em;
+    min-height:22em;
     text-align: center;
 
   }
@@ -559,10 +565,11 @@ article{
     padding-bottom: 2em;
   }
   .views-field-title{
-    text-transform: uppercase;
+  /*  text-transform: uppercase;*/
   }
   .views-field-body{
-    font-family: 'Bad Script', cursive;
+    /*font-family: 'Bad Script', cursive;*/
+    font-family: 'special';
     font-size:@font-size-h3;
   }
   .views-field-view-node{
@@ -574,6 +581,7 @@ article{
     padding:5%;
     margin:5%;
     width: 90%;
+    background-color: rgba(0, 39, 76, 0.85);
     a{
       color:white;
       display: block;
@@ -619,21 +627,30 @@ article{
   color: white;
   text-align: center;
 }
+//== learning goals page
+.view-id-goals{
+  .view-content{
+    background:transparent;
+    padding: 0px;
+  }
+  .views-row{
+    padding-bottom: 45px;
+    .inner{
+      border: 2px solid white;
+      background-color: rgba(255,255,255, .85);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      min-height: 28em;
 
-/*
-.navbar.container {
-  @media (min-width: @screen-sm-min) {
-    //width: @container-sm;
-    width: auto;
-    max-width:@screen-md-min;
-  }
-  @media (min-width: @screen-md-min) {
-    width: auto;
-    max-width: @container-lg;
-  }
-  @media (min-width: @screen-lg-min) {
-    width: auto;
-    max-width: @screen-lg-min;
+      &:hover,
+      &:focus,
+      &:active{
+        background: white;
+      }
+
+    }
   }
 }
-*/

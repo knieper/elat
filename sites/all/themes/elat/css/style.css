@@ -4,7 +4,7 @@
  * Modify this file to override the Bootstrap Framework variables. You can copy
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
-@import url("https://fonts.googleapis.com/css?family=Bad+Script");
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 @font-face {
   font-family: 'robotolight';
   src: url("../fonts/roboto_light_macroman/Roboto-Light-webfont.eot");
@@ -30,6 +30,13 @@
   font-family: 'robotoitalic';
   src: url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.eot");
   src: url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.woff") format("woff"), url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.ttf") format("truetype"), url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.svg#robotoitalic") format("svg");
+}
+/*@import url("https://fonts.googleapis.com/css?family=Bad+Script");*
+/*@import url("https://fonts.googleapis.com/css?family=Playfair+Display");*/
+/*@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");*/
+@font-face {
+  font-family: 'special';
+  src: url("../fonts/Cormorant_Garamond/CormorantGaramond-Italic.ttf") format("truetype");
 }
 /*official yellow*/
 /*#587ABC;*/
@@ -7553,7 +7560,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   width: 24rem;
 }
 body {
-  background-image: url('../img/Grese-class-at-RadrickForest-opt.jpg');
+  background-image: url('../img/PS1-image.jpeg');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -7593,7 +7600,7 @@ b {
 .main-menu {
   font-family: 'robotothin';
   font-size: 20px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   padding-bottom: 35px;
 }
 .main-menu li ul.dropdown-menu {
@@ -7703,7 +7710,7 @@ h1,
 h2,
 h3,
 h4 {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 .page-header {
   margin-bottom: 0px;
@@ -7797,7 +7804,8 @@ article.node-timeline-item ol > li {
 }
 .attention p:first-child {
   font-size: 34px;
-  font-family: 'Bad Script', cursive;
+  /*  font-family: 'Bad Script', cursive;*/
+  font-family: 'special';
   text-align: center;
 }
 .beginning {
@@ -7853,7 +7861,8 @@ article.node-timeline-item ol > li {
 }
 .end .field-item {
   font-size: 34px;
-  font-family: 'Bad Script', cursive;
+  /*font-family: 'Bad Script', cursive;*/
+  font-family: 'special';
 }
 .end .return {
   width: 100%;
@@ -7882,7 +7891,8 @@ article.node-timeline-item ol > li {
   clear: both;
   color: white;
   text-align: center;
-  font-family: 'bad script';
+  /*font-family:'bad script';*/
+  font-family: 'special';
   font-size: 28px;
   padding: 1em;
   border: 2px solid #d1a600;
@@ -7914,11 +7924,14 @@ article.node-timeline-item ol > li {
   min-height: 14em;
   margin-bottom: 4em;
   border: 2px solid white;
+  /*  background-color: rgba(255,255,255, .85);*/
+  background-color: rgba(0, 39, 76, 0.85);
 }
 #home-row > div > div:hover,
 #home-row > div > div:focus,
 #home-row > div > div:active {
   background: rgba(255, 203, 5, 0.3);
+  /*  background: white;*/
 }
 #home-row a {
   color: white;
@@ -8081,17 +8094,18 @@ article.node-timeline-item ol > li {
   left: 33%;
 }
 #showcaseBrowse .item > div {
-  min-height: 26em;
+  min-height: 22em;
   text-align: center;
 }
 #showcaseBrowse .views-field {
   padding-bottom: 2em;
 }
 #showcaseBrowse .views-field-title {
-  text-transform: uppercase;
+  /*  text-transform: uppercase;*/
 }
 #showcaseBrowse .views-field-body {
-  font-family: 'Bad Script', cursive;
+  /*font-family: 'Bad Script', cursive;*/
+  font-family: 'special';
   font-size: 28px;
 }
 #showcaseBrowse .views-field-view-node {
@@ -8103,6 +8117,7 @@ article.node-timeline-item ol > li {
   padding: 5%;
   margin: 5%;
   width: 90%;
+  background-color: rgba(0, 39, 76, 0.85);
 }
 #showcaseBrowse .views-field-view-node a {
   color: white;
@@ -8144,20 +8159,25 @@ article.node-timeline-item ol > li {
   color: white;
   text-align: center;
 }
-/*
-.navbar.container {
-  @media (min-width: @screen-sm-min) {
-    //width: @container-sm;
-    width: auto;
-    max-width:@screen-md-min;
-  }
-  @media (min-width: @screen-md-min) {
-    width: auto;
-    max-width: @container-lg;
-  }
-  @media (min-width: @screen-lg-min) {
-    width: auto;
-    max-width: @screen-lg-min;
-  }
+.view-id-goals .view-content {
+  background: transparent;
+  padding: 0px;
 }
-*/
+.view-id-goals .views-row {
+  padding-bottom: 45px;
+}
+.view-id-goals .views-row .inner {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 28em;
+}
+.view-id-goals .views-row .inner:hover,
+.view-id-goals .views-row .inner:focus,
+.view-id-goals .views-row .inner:active {
+  background: white;
+}
