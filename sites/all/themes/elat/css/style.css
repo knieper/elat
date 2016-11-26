@@ -7560,6 +7560,8 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   width: 24rem;
 }
 body {
+  letter-spacing: .025em;
+  word-spacing: .025em;
   background-image: url('../img/PS1-image.jpeg');
   background-size: cover;
   background-attachment: fixed;
@@ -7936,6 +7938,7 @@ article.node-timeline-item ol > li {
 #home-row a {
   color: white;
   text-transform: uppercase;
+  /*letter-spacing: 1px;*/
   font-size: 28px;
   display: block;
   padding: .5em;
