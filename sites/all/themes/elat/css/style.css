@@ -7843,29 +7843,32 @@ article.node-timeline-item ol > li {
 }
 .end {
   color: white;
-  padding: 30px 0px 30px 0px;
-  margin: 2em 0px;
+  /*padding: 30px 0px 30px 0px;*/
+  /*margin: 2em 0px;*/
 }
 .end > div.field {
   width: 100%;
   padding: 30px 0px;
   margin: auto;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  /*  border-top: 2px solid white;
+    border-bottom:2px solid white;*/
 }
 @media screen and (min-width: 768px) {
   .end > div.field {
-    width: 80%;
+    /*width: 80%;*/
   }
 }
 .end .field-label {
-  padding: .5em 0px;
+  padding: 1em 0px;
   text-transform: uppercase;
 }
 .end .field-item {
-  font-size: 34px;
-  font-family: 'Bad Script', cursive;
+  font-size: 20px;
+  /*font-family: 'Bad Script', cursive;*/
   /*font-family: 'special';*/
+}
+.end .field-item li {
+  padding: 1em 0px;
 }
 .end .return {
   width: 100%;
