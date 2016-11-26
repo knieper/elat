@@ -4,6 +4,7 @@
  * Modify this file to override the Bootstrap Framework variables. You can copy
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
+@import url("https://fonts.googleapis.com/css?family=Bad+Script");
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 @font-face {
   font-family: 'robotolight';
@@ -31,7 +32,6 @@
   src: url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.eot");
   src: url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.woff") format("woff"), url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.ttf") format("truetype"), url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.svg#robotoitalic") format("svg");
 }
-/*@import url("https://fonts.googleapis.com/css?family=Bad+Script");*
 /*@import url("https://fonts.googleapis.com/css?family=Playfair+Display");*/
 /*@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");*/
 @font-face {
@@ -7788,7 +7788,7 @@ article.node-timeline-item ol > li {
 .attention {
   color: white;
   padding: 30px 0px 30px 0px;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 .attention > div.field {
   width: 80%;
@@ -7804,9 +7804,9 @@ article.node-timeline-item ol > li {
 }
 .attention p:first-child {
   font-size: 34px;
-  /*  font-family: 'Bad Script', cursive;*/
-  /*  font-family: 'special';*/
-  font-family: 'robotobold';
+  font-family: 'Bad Script', cursive;
+  /* font-family: 'special';*/
+  /*font-family: 'robotobold';*/
   text-align: center;
 }
 .beginning {
@@ -7862,8 +7862,8 @@ article.node-timeline-item ol > li {
 }
 .end .field-item {
   font-size: 34px;
-  /*font-family: 'Bad Script', cursive;*/
-  font-family: 'special';
+  font-family: 'Bad Script', cursive;
+  /*font-family: 'special';*/
 }
 .end .return {
   width: 100%;
@@ -7892,8 +7892,8 @@ article.node-timeline-item ol > li {
   clear: both;
   color: white;
   text-align: center;
-  /*font-family:'bad script';*/
-  font-family: 'special';
+  font-family: 'Bad Script', cursive;
+  /*font-family: 'special';*/
   font-size: 28px;
   padding: 1em;
   border: 2px solid #d1a600;
@@ -8105,9 +8105,8 @@ article.node-timeline-item ol > li {
   min-height: 5em;
 }
 #showcaseBrowse .views-field-body {
-  /*font-family: 'Bad Script', cursive;*/
+  font-family: 'Bad Script', cursive;
   /*font-family: 'special';*/
-  font-family: 'robotobold';
   font-size: 28px;
 }
 #showcaseBrowse .views-field-view-node {
