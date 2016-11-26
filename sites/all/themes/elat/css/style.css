@@ -7788,14 +7788,14 @@ article.node-timeline-item ol > li {
 .attention {
   color: white;
   padding: 30px 0px 30px 0px;
-  margin-bottom: 120px;
+  margin-bottom: 90px;
 }
 .attention > div.field {
   width: 80%;
   padding: 30px 0px;
   margin: auto;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  /*border-top: 2px solid white;
+    border-bottom:2px solid white;*/
 }
 @media screen and (min-width: 768px) {
   .attention > div.field {
@@ -7805,7 +7805,8 @@ article.node-timeline-item ol > li {
 .attention p:first-child {
   font-size: 34px;
   /*  font-family: 'Bad Script', cursive;*/
-  font-family: 'special';
+  /*  font-family: 'special';*/
+  font-family: 'robotobold';
   text-align: center;
 }
 .beginning {
@@ -7923,7 +7924,7 @@ article.node-timeline-item ol > li {
   justify-content: center;
   min-height: 14em;
   margin-bottom: 4em;
-  border: 2px solid white;
+  border: 1px solid white;
   background-color: rgba(0, 39, 76, 0.85);
 }
 #home-row > div > div:hover,
@@ -8093,7 +8094,7 @@ article.node-timeline-item ol > li {
   left: 33%;
 }
 #showcaseBrowse .item > div {
-  min-height: 22em;
+  min-height: 24em;
   text-align: center;
 }
 #showcaseBrowse .views-field {
@@ -8101,17 +8102,19 @@ article.node-timeline-item ol > li {
 }
 #showcaseBrowse .views-field-title {
   /*  text-transform: uppercase;*/
+  min-height: 5em;
 }
 #showcaseBrowse .views-field-body {
   /*font-family: 'Bad Script', cursive;*/
-  font-family: 'special';
+  /*font-family: 'special';*/
+  font-family: 'robotobold';
   font-size: 28px;
 }
 #showcaseBrowse .views-field-view-node {
   position: absolute;
   bottom: 0;
   left: 0;
-  border: white solid 2px;
+  border: white solid 1px;
   text-transform: uppercase;
   padding: 5%;
   margin: 5%;
@@ -8152,6 +8155,10 @@ article.node-timeline-item ol > li {
 .carousel-control.left {
   background: none;
   width: 5%;
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  top: 35%;
 }
 .page-showcase-browse .page-header {
   background: none;
