@@ -55,11 +55,18 @@ strong, b{
     ul.dropdown-menu{
 	     box-shadow: none;
        border: none;
-       width: 500px;
+       width: 400px;
+       margin-right: -100px;
        li{
          position: relative;
          display: inline-block;
+         a{
+           padding: 3px 15px;
+         }
        }
+     }
+     &.last > ul.dropdown-menu{
+       margin-right: 0px;
      }
      &.open a{
        padding-bottom:5px;

@@ -7608,11 +7608,18 @@ b {
 .main-menu li ul.dropdown-menu {
   box-shadow: none;
   border: none;
-  width: 500px;
+  width: 400px;
+  margin-right: -100px;
 }
 .main-menu li ul.dropdown-menu li {
   position: relative;
   display: inline-block;
+}
+.main-menu li ul.dropdown-menu li a {
+  padding: 3px 15px;
+}
+.main-menu li.last > ul.dropdown-menu {
+  margin-right: 0px;
 }
 .main-menu li.open a {
   padding-bottom: 5px;
