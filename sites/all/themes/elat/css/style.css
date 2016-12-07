@@ -5,7 +5,6 @@
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
 @import url("https://fonts.googleapis.com/css?family=Bad+Script");
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 @font-face {
   font-family: 'robotolight';
   src: url("../fonts/roboto_light_macroman/Roboto-Light-webfont.eot");
@@ -31,12 +30,6 @@
   font-family: 'robotoitalic';
   src: url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.eot");
   src: url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.woff") format("woff"), url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.ttf") format("truetype"), url("../fonts/roboto_italic_macroman/Roboto-Italic-webfont.svg#robotoitalic") format("svg");
-}
-/*@import url("https://fonts.googleapis.com/css?family=Playfair+Display");*/
-/*@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");*/
-@font-face {
-  font-family: 'special';
-  src: url("../fonts/Cormorant_Garamond/CormorantGaramond-Italic.ttf") format("truetype");
 }
 /*official yellow*/
 /*#587ABC;*/
@@ -7814,8 +7807,6 @@ article.node-timeline-item ol > li {
 .attention p:first-child {
   font-size: 34px;
   font-family: 'Bad Script', cursive;
-  /* font-family: 'special';*/
-  /*font-family: 'robotobold';*/
   text-align: center;
 }
 .beginning {
@@ -7872,7 +7863,6 @@ article.node-timeline-item ol > li {
 .end .field-item {
   font-size: 20px;
   /*font-family: 'Bad Script', cursive;*/
-  /*font-family: 'special';*/
 }
 .end .field-item li {
   padding: 1em 0px;
@@ -7905,7 +7895,6 @@ article.node-timeline-item ol > li {
   color: white;
   text-align: center;
   font-family: 'Bad Script', cursive;
-  /*font-family: 'special';*/
   font-size: 28px;
   padding: 1em;
   border: 2px solid #d1a600;
@@ -8119,7 +8108,6 @@ article.node-timeline-item ol > li {
 }
 #showcaseBrowse .views-field-body {
   font-family: 'Bad Script', cursive;
-  /*font-family: 'special';*/
   font-size: 28px;
 }
 #showcaseBrowse .views-field-view-node {
