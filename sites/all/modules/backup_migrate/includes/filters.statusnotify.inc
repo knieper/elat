@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file
  * A filter for compressing bckups with zip, gz bzip etc.
@@ -11,11 +12,11 @@
  * @ingroup backup_migrate_filters
  */
 class backup_migrate_filter_statusnotify extends backup_migrate_filter {
-
+  
   /**
    * Get the default backup settings for this filter.
    */
-  public function backup_settings_default() {
+  function backup_settings_default() {
     return array(
       'notify_success_enable' => FALSE,
       'notify_failure_enable' => FALSE,
@@ -27,7 +28,7 @@ class backup_migrate_filter_statusnotify extends backup_migrate_filter {
   /**
    * Get the form for the settings for this filter.
    */
-  public function backup_settings_form($settings) {
+  function backup_settings_form($settings) {
     $form = array();
     $form['advanced']['notify_success_enable'] = array(
       "#type" => 'checkbox',
@@ -67,7 +68,7 @@ class backup_migrate_filter_statusnotify extends backup_migrate_filter {
   /**
    * Send the success email.
    */
-  public function backup_succeed($settings) {
+  function backup_succeed($settings) {
     if (@$settings->filters['notify_success_enable'] && $to = @$settings->filters['notify_success_email']) {
       $messages = $this->get_messages();
       if ($messages = $this->get_messages()) {
@@ -83,7 +84,7 @@ class backup_migrate_filter_statusnotify extends backup_migrate_filter {
   /**
    * Send the failure email.
    */
-  public function backup_fail($settings) {
+  function backup_fail($settings) {
     if (@$settings->filters['notify_failure_enable'] && $to = @$settings->filters['notify_failure_email']) {
       $messages = $this->get_messages();
       if ($messages = $this->get_messages()) {
@@ -99,7 +100,7 @@ class backup_migrate_filter_statusnotify extends backup_migrate_filter {
   /**
    * Render the messages and errors for the email.
    */
-  public function get_messages() {
+  function get_messages() {
     $out = "";
     $messages = _backup_migrate_messages();
     foreach ($messages as $message) {
@@ -107,5 +108,5 @@ class backup_migrate_filter_statusnotify extends backup_migrate_filter {
     }
     return $out;
   }
-
 }
+
